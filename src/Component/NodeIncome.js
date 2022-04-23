@@ -30,6 +30,7 @@ ChartJS.register(
 );
 const NodeIncome = () => {
   const [deleteItem, setDeleteItem] = useState(false);
+  const [minsItem, setMinsItem] = useState(false);
 
   const [label, setlable] = useState([
     "Jan",
@@ -99,8 +100,13 @@ const NodeIncome = () => {
       },
     ],
   };
-  const OnDeleteItem = () => {
+  const OnDeleteItem = (e) => {
+    e.preventDefault();
     setDeleteItem(true);
+  };
+  const OnMinsItem = (e) => {
+    e.preventDefault();
+    setMinsItem(true);
   };
 
   return (
@@ -110,7 +116,7 @@ const NodeIncome = () => {
           <div className="d-flex">
             {/* LOGO */}
             <div className="navbar-brand-box">
-              <a href="index.html" className="logo logo-dark">
+              <a href="" className="logo logo-dark">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -118,7 +124,7 @@ const NodeIncome = () => {
                   <img src="assets/images/logo.png" alt="" height={24} />
                 </span>
               </a>
-              <a href="index.html" className="logo logo-light">
+              <a href="" className="logo logo-light">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -196,10 +202,7 @@ const NodeIncome = () => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/spain.jpg"
                     alt="user-image"
@@ -209,10 +212,7 @@ const NodeIncome = () => {
                   <span className="align-middle">Spanish</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/germany.jpg"
                     alt="user-image"
@@ -222,10 +222,7 @@ const NodeIncome = () => {
                   <span className="align-middle">German</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/italy.jpg"
                     alt="user-image"
@@ -235,10 +232,7 @@ const NodeIncome = () => {
                   <span className="align-middle">Italian</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/russia.jpg"
                     alt="user-image"
@@ -280,7 +274,7 @@ const NodeIncome = () => {
                       <h5 className="m-0 font-size-16"> Notifications </h5>
                     </div>
                     <div className="col-auto">
-                      <a href="#!" className="small">
+                      <a href="" className="small">
                         {" "}
                         Mark all as read
                       </a>
@@ -288,7 +282,7 @@ const NodeIncome = () => {
                   </div>
                 </div>
                 <div data-simplebar style={{ maxHeight: "230px" }}>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <div className="avatar-xs">
@@ -310,7 +304,7 @@ const NodeIncome = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <img
@@ -332,7 +326,7 @@ const NodeIncome = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <div className="avatar-xs">
@@ -354,7 +348,7 @@ const NodeIncome = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <img
@@ -381,7 +375,7 @@ const NodeIncome = () => {
                   <div className="d-grid">
                     <a
                       className="btn btn-sm btn-link font-size-14 text-center"
-                      href="javascript:void(0)"
+                      href=""
                     >
                       <i className="uil-arrow-circle-right me-1" /> View More..
                     </a>
@@ -410,15 +404,15 @@ const NodeIncome = () => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-user-circle font-size-18 align-middle text-muted me-1" />{" "}
                   <span className="align-middle">View Profile</span>
                 </a>
-                <a className="dropdown-item d-block" href="#">
+                <a className="dropdown-item d-block" href="">
                   <i className="uil uil-cog font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Settings</span>
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Sign out</span>
                 </a>
@@ -444,7 +438,7 @@ const NodeIncome = () => {
                   <div className="page-title-right">
                     <ol className="breadcrumb m-0">
                       <li className="breadcrumb-item">
-                        <a href="javascript: void(0);">SiteName</a>
+                        <a href="">SiteName</a>
                       </li>
                       <li className="breadcrumb-item active">Node Income</li>
                     </ol>
@@ -454,32 +448,43 @@ const NodeIncome = () => {
             </div>
             {/* end page title */}
             <div className="row">
-              <div className="col-xl-6">
+              <div className={deleteItem ? "paragraph" : "col-xl-6"}>
                 <div className="rcrfeature">
                   <div className="card">
                     <div className="card-header">
                       <div className="card-widgets">
-                        <a href="javascript:;" data-toggle="reload">
+                        <a href="" data-toggle="reload">
                           <GrFormRefresh />
                         </a>
                         <a
                           className="dwww"
                           data-bs-toggle="collapse"
-                          href="#collapseCard1"
+                          href=""
                           role="button"
                           aria-expanded="false"
                           aria-controls="collapseCard1"
                         >
-                          <AiOutlineMinus />
+                          {minsItem ? (
+                            <AiOutlinePlus
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setMinsItem(false);
+                              }}
+                            />
+                          ) : (
+                            <AiOutlineMinus onClick={OnMinsItem} />
+                          )}
                         </a>
-                        <a href="#" data-toggle="remove">
-                          <GrFormClose />
+                        <a href="" data-toggle="remove">
+                          <GrFormClose onClick={OnDeleteItem} />
                         </a>
                       </div>
                       <h3 className="card-title">Earnings</h3>
                     </div>
                     <div className="collapse show" id="collapseCard1">
-                      <div className="card-body pb-1">
+                      <div
+                        className={minsItem ? "paragraph1" : "card-body pb-1"}
+                      >
                         <Bar options={options} data={data1} />
                       </div>
                       {/* end card-body*/}
@@ -631,9 +636,7 @@ const NodeIncome = () => {
               <div className="col-sm-6">
                 <div className="text-sm-end d-none d-sm-block">
                   Thanks <i className="mdi mdi-heart text-danger" /> From{" "}
-                  <a href className="text-reset">
-                    sdaminul
-                  </a>
+                  <a className="text-reset">sdaminul</a>
                 </div>
               </div>
             </div>

@@ -22,7 +22,7 @@ const NodeStaking = () => {
                   <img src="assets/images/logo.png" alt="" height={24} />
                 </span>
               </a>
-              <a href="index.html" className="logo logo-light">
+              <a href="" className="logo logo-light">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -100,10 +100,7 @@ const NodeStaking = () => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src={UsPic}
                     alt="user-image"
@@ -113,10 +110,7 @@ const NodeStaking = () => {
                   <span className="align-middle">Spanish</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/germany.jpg"
                     alt="user-image"
@@ -126,10 +120,7 @@ const NodeStaking = () => {
                   <span className="align-middle">German</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/italy.jpg"
                     alt="user-image"
@@ -139,10 +130,7 @@ const NodeStaking = () => {
                   <span className="align-middle">Italian</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/russia.jpg"
                     alt="user-image"
@@ -184,7 +172,7 @@ const NodeStaking = () => {
                       <h5 className="m-0 font-size-16"> Notifications </h5>
                     </div>
                     <div className="col-auto">
-                      <a href="#!" className="small">
+                      <a href="" className="small">
                         {" "}
                         Mark all as read
                       </a>
@@ -192,7 +180,7 @@ const NodeStaking = () => {
                   </div>
                 </div>
                 <div data-simplebar style={{ maxHeight: "230px" }}>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <div className="avatar-xs">
@@ -214,7 +202,7 @@ const NodeStaking = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <img
@@ -236,7 +224,7 @@ const NodeStaking = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <div className="avatar-xs">
@@ -258,7 +246,7 @@ const NodeStaking = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <img
@@ -285,7 +273,7 @@ const NodeStaking = () => {
                   <div className="d-grid">
                     <a
                       className="btn btn-sm btn-link font-size-14 text-center"
-                      href="javascript:void(0)"
+                      href=""
                     >
                       <i className="uil-arrow-circle-right me-1" /> View More..
                     </a>
@@ -314,15 +302,15 @@ const NodeStaking = () => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-user-circle font-size-18 align-middle text-muted me-1" />{" "}
                   <span className="align-middle">View Profile</span>
                 </a>
-                <a className="dropdown-item d-block" href="#">
+                <a className="dropdown-item d-block" href="">
                   <i className="uil uil-cog font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Settings</span>
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Sign out</span>
                 </a>
@@ -366,14 +354,14 @@ const NodeStaking = () => {
                         <a
                           className="dwww"
                           data-bs-toggle="collapse"
-                          href="#collapseCard1"
+                          href=""
                           role="button"
                           aria-expanded="false"
                           aria-controls="collapseCard1"
                         >
                           <i className="mdi mdi-minus" />
                         </a>
-                        <a href="#" data-toggle="remove">
+                        <a href="" data-toggle="remove">
                           <i className="mdi mdi-close" />
                         </a>
                       </div>
@@ -411,14 +399,14 @@ const NodeStaking = () => {
                         <a
                           className="dwww"
                           data-bs-toggle="collapse"
-                          href="#collapseCard2"
+                          href=""
                           role="button"
                           aria-expanded="false"
                           aria-controls="collapseCard2"
                         >
                           <i className="mdi mdi-minus" />
                         </a>
-                        <a href="#" data-toggle="remove">
+                        <a href="" data-toggle="remove">
                           <i className="mdi mdi-close" />
                         </a>
                       </div>
@@ -456,14 +444,14 @@ const NodeStaking = () => {
                         <a
                           className="dwww"
                           data-bs-toggle="collapse"
-                          href="#collapseCard3"
+                          href=""
                           role="button"
                           aria-expanded="false"
                           aria-controls="collapseCard3"
                         >
                           <i className="mdi mdi-minus" />
                         </a>
-                        <a href="#" data-toggle="remove">
+                        <a href="" data-toggle="remove">
                           <i className="mdi mdi-close" />
                         </a>
                       </div>

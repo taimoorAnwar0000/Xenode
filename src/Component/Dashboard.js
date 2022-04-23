@@ -5,6 +5,9 @@ import UsPic from "../Images/flags/us.jpg";
 import Profile from "../Images/users/avatar-4.jpg";
 import { BiBell } from "react-icons/bi";
 import Graph1 from "./Graph/Graph1";
+import { GrFormClose, GrFormRefresh } from "react-icons/gr";
+import { AiOutlineMinus } from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
 
 import {
   Chart as ChartJS,
@@ -42,6 +45,9 @@ const Dashboard = () => {
     "11 Jan 2001",
     "12 Jan 2001",
   ]);
+  const [deleteItem, setDeleteItem] = useState(false);
+  const [minsItem, setMinsItem] = useState(false);
+
   const [data, setData] = useState([
     44, 50, 41, 67, 22, 41, 20, 35, 75, 32, 25, 16,
   ]);
@@ -96,6 +102,16 @@ const Dashboard = () => {
       },
     ],
   };
+
+  const OnDeleteItem = (e) => {
+    e.preventDefault();
+    setDeleteItem(true);
+  };
+  const OnMinsItem = (e) => {
+    e.preventDefault();
+    setMinsItem(true);
+  };
+
   return (
     <div id="layout-wrapper">
       <header id="page-topbar">
@@ -103,7 +119,7 @@ const Dashboard = () => {
           <div className="d-flex">
             {/* LOGO */}
             <div className="navbar-brand-box">
-              <a href="index.html" className="logo logo-dark">
+              <a href="" className="logo logo-dark">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -111,7 +127,7 @@ const Dashboard = () => {
                   <img src="assets/images/logo.png" alt="" height={24} />
                 </span>
               </a>
-              <a href="index.html" className="logo logo-light">
+              <a href="" className="logo logo-light">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -189,10 +205,7 @@ const Dashboard = () => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/spain.jpg"
                     alt="user-image"
@@ -202,10 +215,7 @@ const Dashboard = () => {
                   <span className="align-middle">Spanish</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/germany.jpg"
                     alt="user-image"
@@ -215,10 +225,7 @@ const Dashboard = () => {
                   <span className="align-middle">German</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/italy.jpg"
                     alt="user-image"
@@ -228,10 +235,7 @@ const Dashboard = () => {
                   <span className="align-middle">Italian</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/russia.jpg"
                     alt="user-image"
@@ -273,7 +277,7 @@ const Dashboard = () => {
                       <h5 className="m-0 font-size-16"> Notifications </h5>
                     </div>
                     <div className="col-auto">
-                      <a href="#!" className="small">
+                      <a href="" className="small">
                         {" "}
                         Mark all as read
                       </a>
@@ -281,7 +285,7 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div data-simplebar style={{ maxHeight: "230px" }}>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <div className="avatar-xs">
@@ -303,7 +307,7 @@ const Dashboard = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <img
@@ -325,7 +329,7 @@ const Dashboard = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <div className="avatar-xs">
@@ -347,7 +351,7 @@ const Dashboard = () => {
                       </div>
                     </div>
                   </a>
-                  <a href className="text-reset notification-item">
+                  <a className="text-reset notification-item">
                     <div className="d-flex align-items-start">
                       <div className="flex-shrink-0 me-3">
                         <img
@@ -374,7 +378,7 @@ const Dashboard = () => {
                   <div className="d-grid">
                     <a
                       className="btn btn-sm btn-link font-size-14 text-center"
-                      href="javascript:void(0)"
+                      href=""
                     >
                       <i className="uil-arrow-circle-right me-1" /> View More..
                     </a>
@@ -403,15 +407,15 @@ const Dashboard = () => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-user-circle font-size-18 align-middle text-muted me-1" />{" "}
                   <span className="align-middle">View Profile</span>
                 </a>
-                <a className="dropdown-item d-block" href="#">
+                <a className="dropdown-item d-block" href="">
                   <i className="uil uil-cog font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Settings</span>
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Sign out</span>
                 </a>
@@ -437,7 +441,7 @@ const Dashboard = () => {
                   <div className="page-title-right">
                     <ol className="breadcrumb m-0">
                       <li className="breadcrumb-item">
-                        <a href="javascript: void(0);">SiteName</a>
+                        <a href="">SiteName</a>
                       </li>
                       <li className="breadcrumb-item active">Dashboard</li>
                     </ol>
@@ -452,20 +456,20 @@ const Dashboard = () => {
                   <div className="card">
                     <div className="card-header">
                       <div className="card-widgets">
-                        <a href="javascript:;" data-toggle="reload">
+                        <a href="" data-toggle="reload">
                           <i className="mdi mdi-refresh" />
                         </a>
                         <a
                           className="dwww"
                           data-bs-toggle="collapse"
-                          href="#collapseCard1"
+                          href=""
                           role="button"
                           aria-expanded="false"
                           aria-controls="collapseCard1"
                         >
                           <i className="mdi mdi-minus" />
                         </a>
-                        <a href="#" data-toggle="remove">
+                        <a href="" data-toggle="remove">
                           <i className="mdi mdi-close" />
                         </a>
                       </div>
@@ -482,33 +486,45 @@ const Dashboard = () => {
                 </div>
               </div>
               {/* end col */}
-              <div className="col-xl-4">
+              <div className={deleteItem ? "paragraph" : "col-xl-4"}>
                 <div className="rcrfeature">
                   <div className="card">
                     <div className="card-header">
                       <div className="card-widgets">
-                        <a href="javascript:;" data-toggle="reload">
-                          <i className="mdi mdi-refresh" />
+                        <a href="" data-toggle="reload">
+                          <GrFormRefresh />
                         </a>
                         <a
                           className="dwww"
                           data-bs-toggle="collapse"
-                          href="#collapseCard2"
+                          href=""
                           role="button"
                           aria-expanded="false"
                           aria-controls="collapseCard2"
                         >
-                          <i className="mdi mdi-minus" />
+                          {minsItem ? (
+                            <AiOutlinePlus
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setMinsItem(false);
+                              }}
+                            />
+                          ) : (
+                            <AiOutlineMinus onClick={OnMinsItem} />
+                          )}{" "}
                         </a>
-                        <a href="#" data-toggle="remove">
-                          <i className="mdi mdi-close" />
+                        <a href="" data-toggle="remove">
+                          <GrFormClose onClick={OnDeleteItem} />
                         </a>
                       </div>
                       <h3 className="card-title">
                         Xenode <span className="text-info">#10</span>
                       </h3>
                     </div>
-                    <div className="collapse show" id="collapseCard2">
+                    <div
+                      className={minsItem ? "paragraph1" : "collapse show"}
+                      id="collapseCard2"
+                    >
                       <div className="card-body">
                         <div className="row py-3 px-2 m-0 border-bottom">
                           <div className="col fw-bolder">Node Stakes:</div>
@@ -550,9 +566,7 @@ const Dashboard = () => {
               <div className="col-sm-6">
                 <div className="text-sm-end d-none d-sm-block">
                   Thanks <i className="mdi mdi-heart text-danger" /> From{" "}
-                  <a href className="text-reset">
-                    sdaminul
-                  </a>
+                  <a className="text-reset">sdaminul</a>
                 </div>
               </div>
             </div>
