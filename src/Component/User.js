@@ -14,7 +14,7 @@ const User = (props) => {
           <div className="d-flex">
             {/* LOGO */}
             <div className="navbar-brand-box">
-              <a href="index.html" className="logo logo-dark">
+              <a href="" className="logo logo-dark">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -22,7 +22,7 @@ const User = (props) => {
                   <img src="assets/images/logo.png" alt="" height={24} />
                 </span>
               </a>
-              <a href="index.html" className="logo logo-light">
+              <a href="" className="logo logo-light">
                 <span className="logo-sm">
                   <img src="assets/images/logo-sm.png" alt="" height={23} />
                 </span>
@@ -100,10 +100,7 @@ const User = (props) => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/spain.jpg"
                     alt="user-image"
@@ -113,10 +110,7 @@ const User = (props) => {
                   <span className="align-middle">Spanish</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/germany.jpg"
                     alt="user-image"
@@ -126,10 +120,7 @@ const User = (props) => {
                   <span className="align-middle">German</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/italy.jpg"
                     alt="user-image"
@@ -139,10 +130,7 @@ const User = (props) => {
                   <span className="align-middle">Italian</span>
                 </a>
                 {/* item*/}
-                <a
-                  href="javascript:void(0);"
-                  className="dropdown-item notify-item"
-                >
+                <a href="" className="dropdown-item notify-item">
                   <img
                     src="assets/images/flags/russia.jpg"
                     alt="user-image"
@@ -184,7 +172,7 @@ const User = (props) => {
                       <h5 className="m-0 font-size-16"> Notifications </h5>
                     </div>
                     <div className="col-auto">
-                      <a href="#!" className="small">
+                      <a href="" className="small">
                         Mark all as read
                       </a>
                     </div>
@@ -284,7 +272,7 @@ const User = (props) => {
                   <div className="d-grid">
                     <a
                       className="btn btn-sm btn-link font-size-14 text-center"
-                      href="javascript:void(0)"
+                      href=""
                     >
                       <i className="uil-arrow-circle-right me-1" /> View More..
                     </a>
@@ -313,15 +301,15 @@ const User = (props) => {
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-user-circle font-size-18 align-middle text-muted me-1" />{" "}
                   <span className="align-middle">View Profile</span>
                 </a>
-                <a className="dropdown-item d-block" href="#">
+                <a className="dropdown-item d-block" href="">
                   <i className="uil uil-cog font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Settings</span>
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="">
                   <i className="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted" />{" "}
                   <span className="align-middle">Sign out</span>
                 </a>
@@ -347,7 +335,7 @@ const User = (props) => {
                   <div className="page-title-right">
                     <ol className="breadcrumb m-0">
                       <li className="breadcrumb-item">
-                        <a href="javascript: void(0);">SiteName</a>
+                        <a href="">SiteName</a>
                       </li>
                       <li className="breadcrumb-item active">Users</li>
                     </ol>
@@ -395,7 +383,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -408,7 +396,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -421,7 +409,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -434,7 +422,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -447,7 +435,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -460,7 +448,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -473,7 +461,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
@@ -486,7 +474,7 @@ const User = (props) => {
                           <td>4 SOL</td>
                           <td>Private Dedicated</td>
                           <td className="text-center">
-                            <a href="#">
+                            <a href="">
                               <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
