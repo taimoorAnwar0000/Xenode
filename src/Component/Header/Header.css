@@ -1,0 +1,207 @@
+#header {
+    position: absolute;
+    width: 250px;
+    /* background-image: url('../../images/left-bg.png') !important; */
+  }
+  .pro-sidebar-layout {
+    background-image: url("../../Images/left-bg.png") !important;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #header .pro-sidebar {
+    height: 100vh;
+  }
+  #header .closemenu {
+    color: #000;
+    position: absolute;
+    right: 13px;
+    z-index: 9999;
+    line-height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 22px;
+    top: 30px;
+    cursor: pointer;
+  }
+  #header .pro-sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+  #header .pro-sidebar.collapsed {
+    width: 80px;
+    min-width: 80px;
+  }
+  #header .pro-sidebar-inner {
+    background-color: white;
+    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout {
+    overflow-y: hidden;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+    font-size: 20px;
+    padding: 0 20px;
+    color: #000;
+    font-weight: bold;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul {
+    padding: 0 5px;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+    color: white;
+    margin: 10px 0px;
+    font-weight: bold;
+  }
+  .pro-icon {
+    font-size: 20px;
+    color: white;
+  }
+  #header
+    .pro-sidebar-inner
+    .pro-sidebar-layout
+    ul
+    .pro-inner-item
+    .pro-icon-wrapper {
+    background-color: #fbf4cd;
+    color: #000;
+    border-radius: 3px;
+  
+    background: transparent;
+  }
+  #header
+    .pro-sidebar-inner
+    .pro-sidebar-layout
+    ul
+    .pro-inner-item
+    .pro-icon-wrapper
+    .pro-item-content {
+    /* color: #000; */
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout .active {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .pro-sidebar-inner .menuitem :hover {
+    /* background: rgba(255, 255, 255, .3); */
+  }
+  #header .logo {
+    /* padding: 20px; */
+    margin-top: 30px;
+  }
+  .topNavBar {
+    display: none !important;
+  }
+  .pro-sidebar > .pro-sidebar-inner > .pro-sidebar-layout .pro-sidebar-header {
+    border-bottom: none !important;
+  }
+  .menuTxt {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .pro-sidebar-header {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    justify-content: space-between;
+  }
+  .topMenu {
+    width: 69%;
+  }
+  @media only screen and (max-width: 720px) {
+    html {
+      overflow: hidden;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    #header {
+      display: none;
+    }
+    .topNavBar {
+      display: block !important;
+    }
+    .pro-sidebar-layout {
+      background-size: unset !important;
+      background-attachment: unset !important;
+      background-position: unset !important;
+      background-repeat: unset !important;
+    }
+    .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+      color: white;
+      margin: 10px 0px;
+      font-weight: bold;
+    }
+    .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+      background: transparent !important;
+    }
+    .pro-sidebar-header {
+      background: red;
+      height: 70px;
+      width: 100%;
+    }
+    .topMenu {
+      padding-left: 28px;
+      padding-top: 25px;
+    }
+    .threeBars{
+      position: absolute;
+      top: 24px;
+      left: 100px;
+  
+    }
+    .navbar-light .navbar-toggler{
+      position: relative;
+      left: 70px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .offcanvas {
+    width: 270px !important;
+  }
+  
+  .loogSm {
+    height: 40px;
+    position: absolute;
+    left: 21px;
+    top: 16px;
+  }
+  .logo {
+    width: 140px;
+  }
+  .threeBars {
+    font-size: 25px;
+    color: white;
+  }
+  .expanArrowIcon {
+    color: white;
+    margin-bottom: -70px;
+    margin-right: -7px;
+  }
+  
+
+
+
+
+  .navbar-header .vertical-menu-btn .lines {
+      display: none;
+  }

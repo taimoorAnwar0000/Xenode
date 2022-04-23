@@ -6,10 +6,10 @@ import Profile from "../Images/users/avatar-4.jpg";
 import { BiBell } from "react-icons/bi";
 import { RiDeleteBinLine } from "react-icons/ri";
 
-const User = () => {
+const User = (props) => {
   return (
-    <div id="layout-wrapper">
-      <header id="page-topbar">
+    <div  id={props.leftPadding==true?"layout-wrapper":"layout-wrapperClosed"}>
+      <header id="page-topbar" className={props.leftPadding==true?"topHeader":"topHeaderClosed"}>
         <div className="navbar-header">
           <div className="d-flex">
             {/* LOGO */}

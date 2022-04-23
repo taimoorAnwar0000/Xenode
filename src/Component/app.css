@@ -344,7 +344,7 @@ body[data-layout="horizontal"] .page-content {
   position: absolute;
   right: 0;
   color: #74788d;
-  left: 250px;
+  left: 25px;
   height: 60px;
   -webkit-box-shadow: 0 0px 4px rgba(15, 34, 58, 0.12);
   box-shadow: 0 0px 4px rgba(15, 34, 58, 0.12);

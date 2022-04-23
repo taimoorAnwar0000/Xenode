@@ -27,7 +27,7 @@ ChartJS.register(
   Legend
 );
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   const [label, setlable] = useState([
     "01 Jan 2001",
     "02 Jan 2001",
@@ -97,8 +97,9 @@ const Dashboard = () => {
     ],
   };
   return (
-    <div id="layout-wrapper">
-      <header id="page-topbar">
+    <div id={props.leftPadding==true?"layout-wrapper":"layout-wrapperClosed"}>
+      
+      <header id="page-topbar" className={props.leftPadding==true?"topHeader":"topHeaderClosed"}>
         <div className="navbar-header">
           <div className="d-flex">
             {/* LOGO */}
@@ -420,6 +421,7 @@ const Dashboard = () => {
           </div>
         </div>
       </header>
+
       {/* ========== Left Sidebar Start ========== */}
 
       {/* Left Sidebar End */}
