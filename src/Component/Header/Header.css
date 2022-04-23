@@ -145,6 +145,8 @@
       background: red;
       height: 70px;
       width: 100%;
+      background-image: url('./../../Images/left-bg.png');
+      
     }
     .topMenu {
       padding-left: 28px;
@@ -159,6 +161,7 @@
     .navbar-light .navbar-toggler{
       position: relative;
       left: 70px;
+      z-index: 9999 !important;
     }
   }
   

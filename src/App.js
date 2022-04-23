@@ -29,10 +29,10 @@ function App() {
       <BrowserRouter>
       <Header setLeftPadding={setLeftPadding} leftPadding={leftPadding}/>
     <Routes>
-      <Route path="/" element={<Dashboard leftPadding={leftPadding}/>} />
-      <Route path="/User" element={<User leftPadding={leftPadding}/>} />
-      <Route path="/NodeStaking" element={<NodeStaking leftPadding={leftPadding}/>} />
-      <Route path="/NodeIncome" element={<NodeIncome leftPadding={leftPadding}/>} />
+      <Route exact path="/" element={<Dashboard leftPadding={leftPadding}/>} />
+      <Route exact path="/User" element={<User leftPadding={leftPadding}/>} />
+      <Route exact path="/NodeStaking" element={<NodeStaking leftPadding={leftPadding}/>} />
+      <Route exact path="/NodeIncome" element={<NodeIncome leftPadding={leftPadding}/>} />
       
     </Routes>
   </BrowserRouter>,
