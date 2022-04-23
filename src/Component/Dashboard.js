@@ -47,6 +47,8 @@ const Dashboard = () => {
   ]);
   const [deleteItem, setDeleteItem] = useState(false);
   const [minsItem, setMinsItem] = useState(false);
+  const [deleteItem1, setDeleteItem1] = useState(false);
+  const [minsItem1, setMinsItem1] = useState(false);
 
   const [data, setData] = useState([
     44, 50, 41, 67, 22, 41, 20, 35, 75, 32, 25, 16,
@@ -110,6 +112,14 @@ const Dashboard = () => {
   const OnMinsItem = (e) => {
     e.preventDefault();
     setMinsItem(true);
+  };
+  const OnDeleteItem1 = (e) => {
+    e.preventDefault();
+    setDeleteItem1(true);
+  };
+  const OnMinsItem1 = (e) => {
+    e.preventDefault();
+    setMinsItem1(true);
   };
 
   return (
@@ -451,13 +461,13 @@ const Dashboard = () => {
             </div>
             {/* end page title */}
             <div className="row">
-              <div className="col-xl-8">
+              <div className={deleteItem1 ? "paragraph" : "col-xl-8"}>
                 <div className="rcrfeature">
                   <div className="card">
                     <div className="card-header">
                       <div className="card-widgets">
                         <a href="" data-toggle="reload">
-                          <i className="mdi mdi-refresh" />
+                          <GrFormRefresh />
                         </a>
                         <a
                           className="dwww"
@@ -467,16 +477,27 @@ const Dashboard = () => {
                           aria-expanded="false"
                           aria-controls="collapseCard1"
                         >
-                          <i className="mdi mdi-minus" />
+                          {minsItem1 ? (
+                            <AiOutlinePlus
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setMinsItem1(false);
+                              }}
+                            />
+                          ) : (
+                            <AiOutlineMinus onClick={OnMinsItem1} />
+                          )}
                         </a>
-                        <a href="" data-toggle="remove">
-                          <i className="mdi mdi-close" />
+                        <a data-toggle="remove">
+                          <GrFormClose onClick={OnDeleteItem1} />
                         </a>
                       </div>
                       <h3 className="card-title">Responses Served</h3>
                     </div>
                     <div className="collapse show" id="collapseCard1">
-                      <div className="card-body pb-2">
+                      <div
+                        className={minsItem1 ? "paragraph" : "card-body pb-2"}
+                      >
                         <Graph1 />
                       </div>
                       {/* end card-body*/}
