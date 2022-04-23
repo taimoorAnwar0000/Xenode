@@ -1,7 +1,10 @@
 import React from "react";
 import "./app.css";
 import "./bootstrap.css";
-// import "./icons.css";
+import UsPic from "../Images/flags/us.jpg";
+import Profile from "../Images/users/avatar-4.jpg";
+import { BiBell } from "react-icons/bi";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 const User = () => {
   return (
@@ -93,11 +96,7 @@ const User = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <img
-                  src="assets/images/flags/us.jpg"
-                  alt="Header Language"
-                  height={16}
-                />
+                <img src={UsPic} alt="Header Language" height={16} />
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 {/* item*/}
@@ -172,7 +171,7 @@ const User = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i className="uil-bell" />
+                <BiBell size={25} />
                 <span className="badge bg-danger rounded-pill">3</span>
               </button>
               <div
@@ -186,7 +185,6 @@ const User = () => {
                     </div>
                     <div className="col-auto">
                       <a href="#!" className="small">
-                        {" "}
                         Mark all as read
                       </a>
                     </div>
@@ -305,7 +303,7 @@ const User = () => {
               >
                 <img
                   className="rounded-circle header-profile-user"
-                  src="assets/images/users/avatar-4.jpg"
+                  src={Profile}
                   alt="Header Avatar"
                 />
                 <span className="d-none d-xl-inline-block ms-1 fw-medium font-size-15">
@@ -333,87 +331,7 @@ const User = () => {
         </div>
       </header>
       {/* ========== Left Sidebar Start ========== */}
-      <div className="vertical-menu">
-        {/* LOGO */}
-        <div className="navbar-brand-box">
-          <a href="index.html" className="logo">
-            <span className="logo-sm">
-              <img src="assets/images/logo-sm.png" alt="" height={23} />
-            </span>
-            <span className="logo-lg">
-              <img src="assets/images/logo.png" alt="" height={24} />
-            </span>
-          </a>
-        </div>
-        <button
-          type="button"
-          className="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn"
-        >
-          <div className="lines">
-            <span />
-            <span />
-            <span />
-          </div>
-        </button>
-        <div data-simplebar className="sidebar-menu-scroll">
-          {/*- Sidemenu */}
-          <div id="sidebar-menu">
-            {/* Left Menu Start */}
-            <ul className="metismenu list-unstyled" id="side-menu">
-              <li className="menu-title">Menu</li>
-              <li>
-                <a href="index.html">
-                  <i className="bx bx-bar-chart-square" />
-                  <span className="badge rounded-pill bg-danger float-end">
-                    03
-                  </span>
-                  <span>Insights</span>
-                </a>
-              </li>
-              <li>
-                <a href="node-staking.html" className=" waves-effect">
-                  <i className="bx bx-bolt-circle" />
-                  <span>Node Staking</span>
-                </a>
-              </li>
-              <li>
-                <a href="metrics.html" className="waves-effect">
-                  <i className="bx bx-layer" />
-                  <span className="badge rounded-pill bg-warning float-end">
-                    New
-                  </span>
-                  <span>Metrics</span>
-                </a>
-              </li>
-              <li>
-                <a href="node-income.html" className="waves-effect">
-                  <i className="bx bx-dollar-circle" />
-                  <span>Node Income</span>
-                </a>
-              </li>
-              <li>
-                <a href="users.html" className="waves-effect">
-                  <i className="bx bx-user" />
-                  <span>Active Users</span>
-                </a>
-              </li>
-              <li>
-                <a href="private-users.html" className="waves-effect">
-                  <i className="bx bx-shield" />
-                  <span>Private Users</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="waves-effect">
-                  <i className="bx bx-log-out-circle" />
-                  <span>Logout</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/* Sidebar */}
-        </div>
-      </div>
+
       {/* Left Sidebar End */}
       {/* ============================================================== */}
       {/* Start right Content here */}
@@ -478,7 +396,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -491,7 +409,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -504,7 +422,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -517,7 +435,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -530,7 +448,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -543,7 +461,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -556,7 +474,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
@@ -569,7 +487,7 @@ const User = () => {
                           <td>Private Dedicated</td>
                           <td className="text-center">
                             <a href="#">
-                              <i className="fas fa-trash-alt text-danger fs-5" />
+                              <RiDeleteBinLine style={{ color: "red" }} />
                             </a>
                           </td>
                         </tr>
