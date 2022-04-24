@@ -41,15 +41,19 @@ import { BiCog } from "react-icons/bi";
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 const Header = (props) => {
+  let navigate = useNavigate();
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
-
+  const [stat, setStat] = useState("/");
   const [menuCollpaseBtn, setMenuCollapseBtn] = useState(false);
 
   const [menuCollapseThird, setMenuCollapseThird] = useState(false);
-
+  const routeLink = (id) => {
+    navigate(id);
+    setStat(id);
+  };
   //create a custom function that will change menucollapse state from false to true and true to false
   const menuIconClick = () => {
     props.setLeftPadding(!props.leftPadding);
@@ -128,27 +132,38 @@ const Header = (props) => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <Link to="/">
-                {" "}
-                <MenuItem active={true} icon={<FiHome />}>
+              <div>
+                <MenuItem
+                  active={stat == "/" ? true : false}
+                  icon={<FiHome />}
+                  onClick={() => routeLink("/")}
+                >
                   Insights
                 </MenuItem>
-              </Link>
-              <Link to="/NodeStaking">
-                {" "}
-                <MenuItem icon={<FaList />}>Node Staking</MenuItem>{" "}
-              </Link>
+              </div>
+
+              <MenuItem
+                icon={<FaList />}
+                active={stat == "/NodeStaking" ? true : false}
+                onClick={() => routeLink("/NodeStaking")}
+              >
+                Node Staking
+              </MenuItem>
               <MenuItem icon={<FaRegHeart />}>Metrics</MenuItem>
-
-              <Link to="/NodeIncome">
-                {" "}
-                <MenuItem icon={<RiPencilLine />}>Node Income</MenuItem>
-              </Link>
-              <Link to="/User">
-                {" "}
-                <MenuItem icon={<BiCog />}>Active Users</MenuItem>
-              </Link>
-
+              <MenuItem
+                icon={<RiPencilLine />}
+                active={stat == "/NodeIncome" ? true : false}
+                onClick={() => routeLink("/NodeIncome")}
+              >
+                Node Income
+              </MenuItem>
+              <MenuItem
+                active={stat == "/User" ? true : false}
+                icon={<BiCog />}
+                onClick={() => routeLink("/User")}
+              >
+                Active Users
+              </MenuItem>
               <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
             </Menu>
           </SidebarContent>
